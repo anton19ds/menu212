@@ -115,8 +115,7 @@
         
         .menu-item {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            gap: 20px;
             padding: 16px 0;
             border-bottom: 1px solid #222222;
         }
@@ -125,9 +124,32 @@
             border-bottom: none;
         }
         
+        .item-image {
+            width: 120px;
+            height: 90px;
+            background-color: #222222;
+            border-radius: 8px;
+            border: 1px solid #333333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #555555;
+            font-size: 0.8rem;
+        }
+        
+        .item-content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            min-width: 0;
+        }
+        
         .item-info {
             flex: 1;
             padding-right: 15px;
+            min-width: 0;
         }
         
         .item-info h3 {
@@ -252,6 +274,16 @@
             
             .menu-item {
                 flex-direction: column;
+                gap: 15px;
+            }
+            
+            .item-image {
+                width: 100%;
+                height: 120px;
+            }
+            
+            .item-content {
+                flex-direction: column;
                 align-items: flex-start;
             }
             
@@ -279,6 +311,10 @@
                 flex-direction: column;
                 gap: 5px;
             }
+            
+            .item-image {
+                height: 100px;
+            }
         }
     </style>
 </head>
@@ -305,27 +341,37 @@
                 </div>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-dog item-icon"></i>
-                                Хот дог с говяжей сосиской
-                                <span class="badge badge-beef">Говядина</span>
-                            </h3>
-                            <div class="ingredients">Состав: Свежая булочка, сочная говяжья сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                        <div class="item-image">
+                            Изображение<br>хот-дога
                         </div>
-                        <div class="item-price"><sub>220 гр. </sub>212 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-dog item-icon"></i>
+                                    Хот дог с говяжей сосиской
+                                    <span class="badge badge-beef">Говядина</span>
+                                </h3>
+                                <div class="ingredients">Состав: Свежая булочка, сочная говяжья сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                            </div>
+                            <div class="item-price"><sub>220 гр. </sub>212 ₽</div>
+                        </div>
                     </div>
                     
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-dog item-icon"></i>
-                                Хот дог с куриной сосиской
-                                <span class="badge badge-chicken">Курица</span>
-                            </h3>
-                            <div class="ingredients">Свежая булочка, нежная куриная сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                        <div class="item-image">
+                            Изображение<br>хот-дога
                         </div>
-                        <div class="item-price"><sub>220 гр. </sub>190 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-dog item-icon"></i>
+                                    Хот дог с куриной сосиской
+                                    <span class="badge badge-chicken">Курица</span>
+                                </h3>
+                                <div class="ingredients">Свежая булочка, нежная куриная сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                            </div>
+                            <div class="item-price"><sub>220 гр. </sub>190 ₽</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,27 +382,37 @@
                 </div>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-hotdog item-icon"></i>
-                                Френч дог с говяжей сосиской
-                                <span class="badge badge-beef">Говядина</span>
-                            </h3>
-                            <div class="ingredients">Французская булочка, говяжья сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                        <div class="item-image">
+                            Изображение<br>френч-дога
                         </div>
-                        <div class="item-price"><sub>220 гр. </sub>212 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-hotdog item-icon"></i>
+                                    Френч дог с говяжей сосиской
+                                    <span class="badge badge-beef">Говядина</span>
+                                </h3>
+                                <div class="ingredients">Французская булочка, говяжья сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                            </div>
+                            <div class="item-price"><sub>220 гр. </sub>212 ₽</div>
+                        </div>
                     </div>
                     
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-hotdog item-icon"></i>
-                                Френч дог с куриной сосиской
-                                <span class="badge badge-chicken">Курица</span>
-                            </h3>
-                            <div class="ingredients">Французская булочка, куриная сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                        <div class="item-image">
+                            Изображение<br>френч-дога
                         </div>
-                        <div class="item-price"><sub>220 гр. </sub>190 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-hotdog item-icon"></i>
+                                    Френч дог с куриной сосиской
+                                    <span class="badge badge-chicken">Курица</span>
+                                </h3>
+                                <div class="ingredients">Французская булочка, куриная сосиска, морковка по корейски, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                            </div>
+                            <div class="item-price"><sub>220 гр. </sub>190 ₽</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -368,70 +424,100 @@
                     </div>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-leaf item-icon"></i>
-                                    Чай Черный
-                                </h3>
-                                <div class="description">Классический черный чай в чайнике</div>
+                            <div class="item-image">
+                                Изображение<br>чая
                             </div>
-                            <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-leaf item-icon"></i>
+                                        Чай Черный
+                                    </h3>
+                                    <div class="description">Классический черный чай в чайнике</div>
+                                </div>
+                                <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-leaf item-icon"></i>
-                                    Чай С чабрецом
-                                </h3>
-                                <div class="description">Черный чай с ароматным чабрецом</div>
+                            <div class="item-image">
+                                Изображение<br>чая
                             </div>
-                            <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-leaf item-icon"></i>
+                                        Чай С чабрецом
+                                    </h3>
+                                    <div class="description">Черный чай с ароматным чабрецом</div>
+                                </div>
+                                <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-leaf item-icon"></i>
-                                    Чай Наглый фрукт
-                                </h3>
-                                <div class="description">Фруктовый чай с ярким вкусом</div>
+                            <div class="item-image">
+                                Изображение<br>чая
                             </div>
-                            <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-leaf item-icon"></i>
+                                        Чай Наглый фрукт
+                                    </h3>
+                                    <div class="description">Фруктовый чай с ярким вкусом</div>
+                                </div>
+                                <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-leaf item-icon"></i>
-                                    Чай Травяной сбор
-                                </h3>
-                                <div class="description">Ароматный травяной сбор</div>
+                            <div class="item-image">
+                                Изображение<br>чая
                             </div>
-                            <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-leaf item-icon"></i>
+                                        Чай Травяной сбор
+                                    </h3>
+                                    <div class="description">Ароматный травяной сбор</div>
+                                </div>
+                                <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-leaf item-icon"></i>
-                                    Чай Зеленый
-                                </h3>
-                                <div class="description">Свежий зеленый чай</div>
+                            <div class="item-image">
+                                Изображение<br>чая
                             </div>
-                            <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-leaf item-icon"></i>
+                                        Чай Зеленый
+                                    </h3>
+                                    <div class="description">Свежий зеленый чай</div>
+                                </div>
+                                <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-leaf item-icon"></i>
-                                    Чай Облепиховый
-                                    <span class="badge badge-new">Новый</span>
-                                </h3>
-                                <div class="description">Чай с облепихой и медом</div>
+                            <div class="item-image">
+                                Изображение<br>чая
                             </div>
-                            <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-leaf item-icon"></i>
+                                        Чай Облепиховый
+                                        <span class="badge badge-new">Новый</span>
+                                    </h3>
+                                    <div class="description">Чай с облепихой и медом</div>
+                                </div>
+                                <div class="item-price"><sub>чайник</sub>200 ₽</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -442,47 +528,67 @@
                     </div>
                     <div class="menu-items">
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-coffee item-icon"></i>
-                                    Эспрессо
-                                </h3>
-                                <div class="description">Классический крепкий эспрессо</div>
+                            <div class="item-image">
+                                Изображение<br>эспрессо
                             </div>
-                            <div class="item-price"><sub>30 мл</sub>69 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-coffee item-icon"></i>
+                                        Эспрессо
+                                    </h3>
+                                    <div class="description">Классический крепкий эспрессо</div>
+                                </div>
+                                <div class="item-price"><sub>30 мл</sub>69 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-coffee item-icon"></i>
-                                    Американо
-                                </h3>
-                                <div class="description">Эспрессо с горячей водой</div>
+                            <div class="item-image">
+                                Изображение<br>американо
                             </div>
-                            <div class="item-price"><sub>180 мл</sub>69 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-coffee item-icon"></i>
+                                        Американо
+                                    </h3>
+                                    <div class="description">Эспрессо с горячей водой</div>
+                                </div>
+                                <div class="item-price"><sub>180 мл</sub>69 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-coffee item-icon"></i>
-                                    Капучино
-                                </h3>
-                                <div class="description">Эспрессо с молоком и молочной пенкой</div>
+                            <div class="item-image">
+                                Изображение<br>капучино
                             </div>
-                            <div class="item-price"><sub>200 мл</sub>120 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-coffee item-icon"></i>
+                                        Капучино
+                                    </h3>
+                                    <div class="description">Эспрессо с молоком и молочной пенкой</div>
+                                </div>
+                                <div class="item-price"><sub>200 мл</sub>120 ₽</div>
+                            </div>
                         </div>
                         
                         <div class="menu-item">
-                            <div class="item-info">
-                                <h3>
-                                    <i class="fas fa-coffee item-icon"></i>
-                                    Латте
-                                </h3>
-                                <div class="description">Больше молока, меньше кофе</div>
+                            <div class="item-image">
+                                Изображение<br>латте
                             </div>
-                            <div class="item-price"><sub>250 мл</sub>120 ₽</div>
+                            <div class="item-content">
+                                <div class="item-info">
+                                    <h3>
+                                        <i class="fas fa-coffee item-icon"></i>
+                                        Латте
+                                    </h3>
+                                    <div class="description">Больше молока, меньше кофе</div>
+                                </div>
+                                <div class="item-price"><sub>250 мл</sub>120 ₽</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -494,37 +600,52 @@
                 </div>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-glass-whiskey item-icon"></i>
-                                Лимонад Клубничный Базиличный
-                            </h3>
-                            <div class="description">Освежающий лимонад со вкусом клубники и базилика</div>
+                        <div class="item-image">
+                            Изображение<br>лимонада
                         </div>
-                        <div class="item-price"><sub>1 литр</sub>250 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-glass-whiskey item-icon"></i>
+                                    Лимонад Клубничный Базиличный
+                                </h3>
+                                <div class="description">Освежающий лимонад со вкусом клубники и базилика</div>
+                            </div>
+                            <div class="item-price"><sub>1 литр</sub>250 ₽</div>
+                        </div>
                     </div>
                     
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-glass-whiskey item-icon"></i>
-                                Лимонад Мятный Апельсиновый Лимонный
-                            </h3>
-                            <div class="description">Освежающий лимонад с мятой, апельсином и лимоном</div>
+                        <div class="item-image">
+                            Изображение<br>лимонада
                         </div>
-                        <div class="item-price"><sub>1 литр</sub>250 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-glass-whiskey item-icon"></i>
+                                    Лимонад Мятный Апельсиновый Лимонный
+                                </h3>
+                                <div class="description">Освежающий лимонад с мятой, апельсином и лимоном</div>
+                            </div>
+                            <div class="item-price"><sub>1 литр</sub>250 ₽</div>
+                        </div>
                     </div>
                     
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-glass-whiskey item-icon"></i>
-                                Лимонад Ягодный Фруктовый
-                                <span class="badge badge-new">Новый</span>
-                            </h3>
-                            <div class="description">Освежающий лимонад с ягодно-фруктовым миксом</div>
+                        <div class="item-image">
+                            Изображение<br>лимонада
                         </div>
-                        <div class="item-price"><sub>1 литр</sub>250 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-glass-whiskey item-icon"></i>
+                                    Лимонад Ягодный Фруктовый
+                                    <span class="badge badge-new">Новый</span>
+                                </h3>
+                                <div class="description">Освежающий лимонад с ягодно-фруктовым миксом</div>
+                            </div>
+                            <div class="item-price"><sub>1 литр</sub>250 ₽</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -535,38 +656,53 @@
                 </div>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-sandwich item-icon"></i>
-                                Сендвич
-                            </h3>
-                            <div class="description">Свежий хлеб, копченая грудка, сырный соус, чесночный соус, салат айсберг, свежий лук, маринованные огурцы</div>
+                        <div class="item-image">
+                            Изображение<br>сендвича
                         </div>
-                        <div class="item-price"><sub>250 гр. </sub>210 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-sandwich item-icon"></i>
+                                    Сендвич
+                                </h3>
+                                <div class="description">Свежий хлеб, копченая грудка, сырный соус, чесночный соус, салат айсберг, свежий лук, маринованные огурцы</div>
+                            </div>
+                            <div class="item-price"><sub>250 гр. </sub>210 ₽</div>
+                        </div>
                     </div>
                     
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-pepper-hot item-icon"></i>
-                                Такос
-                                <span class="badge badge-popular">Хит</span>
-                            </h3>
-                            <div class="description">Хрустящая тортилья, мясная начинка (говяжий фарш, болгарский перец, лук, томат, чеснок, красный перец, паприка), салат, сыр и соус</div>
+                        <div class="item-image">
+                            Изображение<br>такос
                         </div>
-                        <div class="item-price"><sub>280 гр. </sub>290 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-pepper-hot item-icon"></i>
+                                    Такос
+                                    <span class="badge badge-popular">Хит</span>
+                                </h3>
+                                <div class="description">Хрустящая тортилья, мясная начинка (говяжий фарш, болгарский перец, лук, томат, чеснок, красный перец, паприка), салат, сыр и соус</div>
+                            </div>
+                            <div class="item-price"><sub>280 гр. </sub>290 ₽</div>
+                        </div>
                     </div>
                     
                     <div class="menu-item">
-                        <div class="item-info">
-                            <h3>
-                                <i class="fas fa-cheese item-icon"></i>
-                                Начос
-                                <span class="badge badge-popular">Хит</span>
-                            </h3>
-                            <div class="description">Хрустящие чипсы начос, гуакамоле, сальса, сырный соус</div>
+                        <div class="item-image">
+                            Изображение<br>начос
                         </div>
-                        <div class="item-price"><sub>240 гр. </sub>350 ₽</div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-cheese item-icon"></i>
+                                    Начос
+                                    <span class="badge badge-popular">Хит</span>
+                                </h3>
+                                <div class="description">Хрустящие чипсы начос, гуакамоле, сальса, сырный соус</div>
+                            </div>
+                            <div class="item-price"><sub>240 гр. </sub>350 ₽</div>
+                        </div>
                     </div>
                 </div>
             </div>
