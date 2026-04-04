@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', 'Roboto Mono', monospace;
         }
-        
+
         body {
             background-color: #000000;
             color: #ffffff;
@@ -20,12 +21,12 @@
             padding: 20px;
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
-        
+
         header {
             text-align: center;
             margin-bottom: 40px;
@@ -33,7 +34,7 @@
             border-bottom: 3px solid #FFD700;
             position: relative;
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
@@ -41,12 +42,12 @@
             margin-bottom: 15px;
             gap: 15px;
         }
-        
+
         .logo-icon {
             color: #FFD700;
             font-size: 2.8rem;
         }
-        
+
         .logo-text {
             font-size: 2.8rem;
             font-weight: 800;
@@ -54,20 +55,20 @@
             letter-spacing: 2px;
             text-transform: uppercase;
         }
-        
+
         .logo-subtext {
             font-size: 1.2rem;
             color: #aaaaaa;
             margin-top: 5px;
         }
-        
+
         .menu-container {
             display: flex;
             flex-direction: column;
             gap: 30px;
             margin-bottom: 40px;
         }
-        
+
         .menu-category {
             background-color: #111111;
             border-radius: 10px;
@@ -75,19 +76,19 @@
             overflow: hidden;
             width: 100%;
         }
-        
+
         .menu-row {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
             margin-bottom: 30px;
         }
-        
+
         .menu-row .menu-category {
             flex: 1;
             min-width: 300px;
         }
-        
+
         .category-header {
             background-color: #222222;
             color: #FFD700;
@@ -95,7 +96,7 @@
             text-align: center;
             border-bottom: 2px solid #333333;
         }
-        
+
         .category-header h2 {
             font-size: 1.6rem;
             display: flex;
@@ -104,26 +105,26 @@
             gap: 10px;
             text-transform: uppercase;
         }
-        
+
         .category-header i {
             font-size: 1.4rem;
         }
-        
+
         .menu-items {
             padding: 20px;
         }
-        
+
         .menu-item {
             display: flex;
             gap: 20px;
             padding: 16px 0;
             border-bottom: 1px solid #222222;
         }
-        
+
         .menu-item:last-child {
             border-bottom: none;
         }
-        
+
         .item-image {
             width: 120px;
             height: 90px;
@@ -138,10 +139,11 @@
             font-size: 0.8rem;
             overflow: hidden;
         }
-        .item-image img{
+
+        .item-image img {
             width: 100%;
         }
-        
+
         .item-content {
             flex: 1;
             display: flex;
@@ -149,13 +151,13 @@
             align-items: flex-start;
             min-width: 0;
         }
-        
+
         .item-info {
             flex: 1;
             padding-right: 15px;
             min-width: 0;
         }
-        
+
         .item-info h3 {
             font-size: 1.3rem;
             margin-bottom: 8px;
@@ -165,20 +167,20 @@
             flex-wrap: wrap;
             gap: 10px;
         }
-        
+
         .item-info .ingredients {
             color: #aaaaaa;
             font-size: 0.9rem;
             line-height: 1.4;
             margin-bottom: 5px;
         }
-        
+
         .item-info .description {
             color: #777777;
             font-size: 0.85rem;
             font-style: italic;
         }
-        
+
         .item-price {
             font-size: 1.5rem;
             font-weight: 800;
@@ -188,7 +190,7 @@
             text-align: right;
             flex-shrink: 0;
         }
-        
+
         .item-price sub {
             font-size: 0.9rem;
             color: #aaaaaa;
@@ -196,13 +198,13 @@
             display: block;
             margin-bottom: 2px;
         }
-        
+
         .item-icon {
             font-size: 1.1rem;
             color: #FFD700;
             flex-shrink: 0;
         }
-        
+
         .badge {
             display: inline-block;
             padding: 3px 8px;
@@ -213,29 +215,29 @@
             letter-spacing: 0.5px;
             white-space: nowrap;
         }
-        
+
         .badge-beef {
             background-color: #333333;
             color: #FFD700;
             border: 1px solid #FFD700;
         }
-        
+
         .badge-chicken {
             background-color: #333333;
             color: #FFD700;
             border: 1px solid #FFD700;
         }
-        
+
         .badge-popular {
             background-color: #FFD700;
             color: #000000;
         }
-        
+
         .badge-new {
             background-color: #FF4500;
             color: #ffffff;
         }
-        
+
         .footer {
             text-align: center;
             margin-top: 40px;
@@ -244,11 +246,11 @@
             color: #777777;
             font-size: 0.9rem;
         }
-        
+
         .footer p {
             margin-bottom: 8px;
         }
-        
+
         .cyber-decoration {
             display: flex;
             justify-content: center;
@@ -257,79 +259,80 @@
             color: #333333;
             font-size: 1.2rem;
         }
-        
+
         @media (max-width: 768px) {
             .logo-text {
                 font-size: 2.2rem;
             }
-            
+
             .logo-icon {
                 font-size: 2.2rem;
             }
-            
+
             .menu-row {
                 flex-direction: column;
                 gap: 30px;
             }
-            
+
             .menu-row .menu-category {
                 min-width: 100%;
             }
-            
+
             .menu-item {
                 flex-direction: column;
                 gap: 15px;
             }
-            
+
             .item-image {
                 width: 100%;
                 height: 120px;
             }
-            
+
             .item-content {
                 flex-direction: column;
                 align-items: flex-start;
             }
-            
+
             .item-price {
                 text-align: left;
                 margin-top: 8px;
                 padding-left: 26px;
             }
         }
-        
+
         @media (max-width: 480px) {
             .menu-items {
                 padding: 15px;
             }
-            
+
             .item-info h3 {
                 font-size: 1.2rem;
             }
-            
+
             .item-price {
                 font-size: 1.3rem;
             }
-            
+
             .logo {
                 flex-direction: column;
                 gap: 5px;
             }
-            
+
             .item-image {
                 height: 100px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="logo">
                 <i class="fas fa-gamepad logo-icon"></i>
                 <div>
-                    <div class="logo-text">Кибер Арена 212</div>
-                    <div class="logo-subtext">Электронное меню</div>
+                    <div class="logo-text">Кибер Меню</div>
+                    <div class="logo-subtext">Арена 212</div>
                 </div>
                 <i class="fas fa-headset logo-icon"></i>
             </div>
@@ -337,7 +340,7 @@
                 <span>┣────────────────────────────┫</span>
             </div>
         </header>
-        
+
         <div class="menu-container">
             <div class="menu-category">
                 <div class="category-header">
@@ -355,12 +358,14 @@
                                     Хот дог с говяжей сосиской
                                     <span class="badge badge-beef">Говядина</span>
                                 </h3>
-                                <div class="ingredients">Состав: Свежая булочка, сочная говяжья сосиска, маринованный лук,салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                                <div class="ingredients">Состав: Свежая булочка, сочная говяжья сосиска, маринованный
+                                    лук,салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица,
+                                    подается с битыми огурцами</div>
                             </div>
                             <div class="item-price"><sub>220 гр. </sub>212 ₽</div>
                         </div>
                     </div>
-                    
+
                     <div class="menu-item">
                         <div class="item-image">
                             <img src="/img/hotdog.jpg" alt="">
@@ -372,14 +377,93 @@
                                     Хот дог с куриной сосиской
                                     <span class="badge badge-chicken">Курица</span>
                                 </h3>
-                                <div class="ingredients">Свежая булочка, нежная куриная сосиска, маринованный лук, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица</div>
+                                <div class="ingredients">Свежая булочка, нежная куриная сосиска, маринованный лук, салат
+                                    айсберг, маринованный огурец, соус чесночный, сырный, кетчуп, горчица, подается с
+                                    битыми огурцами</div>
                             </div>
                             <div class="item-price"><sub>220 гр. </sub>190 ₽</div>
                         </div>
                     </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/img/tomyam.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-dog item-icon"></i>
+                                    Хот дог Том Ям
+                                    <span class="badge badge-chicken">Креветка</span>
+                                </h3>
+                                <div class="ingredients">Свежая булочка, креветки, маринованный лук, салат айсберг,
+                                    грибы иноки, соус чесночный, сырный, горчица, морковь по-корейски, подается с битыми
+                                    огурцами</div>
+                            </div>
+                            <div class="item-price"><sub>280 гр. </sub>280 ₽</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/img/гриб.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-dog item-icon"></i>
+                                    Хот дог c Грибами
+                                    <span class="badge badge-chicken">Говядина</span>
+                                </h3>
+                                <div class="ingredients">Состав: Свежая булочка, сочная говяжья сосиска, жареные с
+                                    розмарином грибы шампиньоны, маринованный лук,салат айсберг, маринованный огурец,
+                                    соус чесночный, сырный, кетчуп, горчица, подается с битыми огурцами</div>
+                            </div>
+                            <div class="item-price"><sub>320 гр. </sub>260 ₽</div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/img/egg.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-dog item-icon"></i>
+                                    Хот дог c Яйцом
+                                    <span class="badge badge-chicken">Курица</span>
+                                </h3>
+                                <div class="ingredients">Состав: Свежая булочка, сочная куриная сосиска, скрембл,
+                                    маринованный лук, зелень, салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп,
+                                    горчица, подается с битыми огурцами</div>
+                            </div>
+                            <div class="item-price"><sub>320 гр. </sub>250 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/img/pig.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-dog item-icon"></i>
+                                    Хот дог c Рваной свининой терияки
+                                    <span class="badge badge-chicken">Свинина</span>
+                                </h3>
+                                <div class="ingredients">Состав: Свежая булочка, рваная свинина терияки,
+                                    маринованный лук,салат айсберг, маринованный огурец, соус чесночный, сырный, кетчуп,
+                                    горчица, зелень, подается с битыми огурцами</div>
+                            </div>
+                            <div class="item-price"><sub>320 гр. </sub>300 ₽</div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-            
+
             <div class="menu-category">
                 <div class="category-header">
                     <h2><i class="fas fa-bread-slice"></i> Французские хот-доги</h2>
@@ -396,12 +480,13 @@
                                     Френч дог с говяжей сосиской
                                     <span class="badge badge-beef">Говядина</span>
                                 </h3>
-                                <div class="ingredients">Французская булочка, говяжья сосиска, морковка по корейски, капуста квашенная, соус чесночный, сырный, кетчуп, горчица</div>
+                                <div class="ingredients">Французская булочка, говяжья сосиска, морковка по корейски,
+                                    капуста квашенная, соус чесночный, сырный, кетчуп, горчица</div>
                             </div>
                             <div class="item-price"><sub>220 гр. </sub>212 ₽</div>
                         </div>
                     </div>
-                    
+
                     <div class="menu-item">
                         <div class="item-image">
                             Изображение<br>френч-дога
@@ -413,14 +498,15 @@
                                     Френч дог с куриной сосиской
                                     <span class="badge badge-chicken">Курица</span>
                                 </h3>
-                                <div class="ingredients">Французская булочка, куриная сосиска, морковка по корейски, капуста квашенная, соус чесночный, сырный, кетчуп, горчица</div>
+                                <div class="ingredients">Французская булочка, куриная сосиска, морковка по корейски,
+                                    капуста квашенная, соус чесночный, сырный, кетчуп, горчица</div>
                             </div>
                             <div class="item-price"><sub>220 гр. </sub>190 ₽</div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="menu-row">
                 <div class="menu-category">
                     <div class="category-header">
@@ -442,7 +528,7 @@
                                 <div class="item-price"><sub>чайник</sub>200 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>чая
@@ -458,7 +544,7 @@
                                 <div class="item-price"><sub>чайник</sub>200 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>чая
@@ -474,7 +560,7 @@
                                 <div class="item-price"><sub>чайник</sub>200 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>чая
@@ -490,7 +576,7 @@
                                 <div class="item-price"><sub>чайник</sub>200 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>чая
@@ -506,7 +592,7 @@
                                 <div class="item-price"><sub>чайник</sub>200 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>чая
@@ -525,7 +611,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="menu-category">
                     <div class="category-header">
                         <h2><i class="fas fa-coffee"></i> Кофе</h2>
@@ -546,7 +632,7 @@
                                 <div class="item-price"><sub>30 мл</sub>69 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>американо
@@ -562,7 +648,7 @@
                                 <div class="item-price"><sub>180 мл</sub>69 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>капучино
@@ -578,7 +664,7 @@
                                 <div class="item-price"><sub>200 мл</sub>120 ₽</div>
                             </div>
                         </div>
-                        
+
                         <div class="menu-item">
                             <div class="item-image">
                                 Изображение<br>латте
@@ -594,10 +680,12 @@
                                 <div class="item-price"><sub>250 мл</sub>120 ₽</div>
                             </div>
                         </div>
+
+                        
                     </div>
                 </div>
             </div>
-            
+
             <div class="menu-category">
                 <div class="category-header">
                     <h2><i class="fas fa-glass-cheers"></i> Напитки</h2>
@@ -618,7 +706,7 @@
                             <div class="item-price"><sub>1 литр</sub>250 ₽</div>
                         </div>
                     </div>
-                    
+
                     <div class="menu-item">
                         <div class="item-image">
                             Изображение<br>лимонада
@@ -634,7 +722,7 @@
                             <div class="item-price"><sub>1 литр</sub>250 ₽</div>
                         </div>
                     </div>
-                    
+
                     <div class="menu-item">
                         <div class="item-image">
                             Изображение<br>лимонада
@@ -651,9 +739,54 @@
                             <div class="item-price"><sub>1 литр</sub>250 ₽</div>
                         </div>
                     </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            Изображение<br>лимонада
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-glass-whiskey item-icon"></i>
+                                    Клюквеный МОРС
+                                    <span class="badge badge-new">Новый</span>
+                                </h3>
+                                <div class="description">Сладкий с кислинкой освежаюший клюквеный морс</div>
+                            </div>
+                            <div class="item-price"><sub>300 мл</sub>200 ₽</div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            
+
+
+            <div class="menu-category">
+                <div class="category-header">
+                    <h2><i class="fas fa-glass-cheers"></i>Бульон !</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            Изображение<br>лимонада
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-glass-whiskey item-icon"></i>
+                                    Куриный бульончик
+                                </h3>
+                                <div class="description">Золотистый наваристый куриный бульон, как прекрасное доролнение к хот догу</div>
+                            </div>
+                            <div class="item-price"><sub>200 мл</sub>100 ₽</div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
             <div class="menu-category">
                 <div class="category-header">
                     <h2><i class="fas fa-utensils"></i> Закуски и снэки</h2>
@@ -667,31 +800,66 @@
                             <div class="item-info">
                                 <h3>
                                     <i class="fas fa-sandwich item-icon"></i>
-                                    Сендвич
+                                    Сэндвич
                                 </h3>
-                                <div class="description">Свежий хлеб, копченая грудка, сырный соус, чесночный соус, салат айсберг, свежий лук, маринованные огурцы</div>
+                                <div class="description">Свежий хлеб, копченая грудка, сырный соус, чесночный соус,
+                                    салат айсберг, свежий лук, маринованные огурцы, с квашеной капустой, и морковкой по корейски</div>
                             </div>
                             <div class="item-price"><sub>250 гр. </sub>210 ₽</div>
                         </div>
                     </div>
-                    
+
                     <div class="menu-item">
                         <div class="item-image">
-                            <img src="/img/naco.jpg" alt="">
+                            <img src="/img/chia.jpg" alt="">
                         </div>
                         <div class="item-content">
                             <div class="item-info">
                                 <h3>
                                     <i class="fas fa-pepper-hot item-icon"></i>
-                                    Такос
+                                    Большая Чиабата с картофелем фри
+                                    <span class="badge badge-popular">Большая</span>
+                                </h3>
+                                <div class="description">Чиабата, с куриной грудкой, плавленым сыром, салат айсберг, маринованые огурцы, свежие помидоры, соус сырный, соус чесночный, соус горчичный, скрэмбл, подается с  картофелем фри и сырным соусом</div>
+                            </div>
+                            <div class="item-price"><sub>480 гр. </sub>410 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-pepper-hot item-icon"></i>
+                                    Острые крылья Ширирачи
                                     <span class="badge badge-popular">Хит</span>
                                 </h3>
-                                <div class="description">Хрустящая тортилья, мясная начинка (говяжий фарш, болгарский перец, лук, томат, чеснок, красный перец, паприка), салат, сыр и соус</div>
+                                <div class="description">Острые куриные крылья, с красным перцем, сладким соусом, соусом ширирачи</div>
                             </div>
                             <div class="item-price"><sub>280 гр. </sub>290 ₽</div>
                         </div>
                     </div>
-                    
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-pepper-hot item-icon"></i>
+                                   сладкие крылья терияки
+                                    <span class="badge badge-popular">Хит</span>
+                                </h3>
+                                <div class="description">Куриные крылья со сладким соусом терияки, соусом горчичным</div>
+                            </div>
+                            <div class="item-price"><sub>280 гр. </sub>290 ₽</div>
+                        </div>
+                    </div>
+
                     <div class="menu-item">
                         <div class="item-image">
                             <img src="/img/nacho.jpg" alt="">
@@ -708,10 +876,43 @@
                             <div class="item-price"><sub>240 гр. </sub>350 ₽</div>
                         </div>
                     </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/img/fri.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-cheese item-icon"></i>
+                                    Картофель фри
+                                </h3>
+                                <div class="description"></div>
+                            </div>
+                            <div class="item-price"><sub>150 гр. </sub>120 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="/img/fri.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-info">
+                                <h3>
+                                    <i class="fas fa-cheese item-icon"></i>
+                                    Картофель Деревенский с паприкой и чесноком
+                                </h3>
+                                <div class="description"></div>
+                            </div>
+                            <div class="item-price"><sub>200 гр. </sub>140 ₽</div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        
+
         <div class="footer">
             <p><i class="far fa-copyright"></i> Кибер Арена 212 | Все цены указаны в рублях</p>
             <p>Для заказа обратитесь к администратору</p>
@@ -722,4 +923,5 @@
         </div>
     </div>
 </body>
+
 </html>
